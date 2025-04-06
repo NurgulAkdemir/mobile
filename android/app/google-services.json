@@ -1,0 +1,29 @@
+{
+    "project_info": {
+      "project_number": "681268079100",
+      "project_id": "mentalist-9db5a",
+      "storage_bucket": "mentalist-9db5a.firebasestorage.app"
+    },
+    "client": [
+      {
+        "client_info": {
+          "mobilesdk_app_id": "1:681268079100:android:2772cb9782ab68d65e6a79",
+          "android_client_info": {
+            "package_name": "com.nurgul.mentalist"
+          }
+        },
+        "oauth_client": [],
+        "api_key": [
+          {
+            "current_key": "AIzaSyABwbLAo0IixKMccEO-yzEH-yPsbKDVUCE"
+          }
+        ],
+        "services": {
+          "appinvite_service": {
+            "other_platform_oauth_client": []
+          }
+        }
+      }
+    ],
+    "configuration_version": "1"
+  }

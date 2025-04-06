@@ -12,6 +12,8 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.nurgul.mentalist",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -31,6 +33,19 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "googleServices": {
+              "version": "4.4.2"
+            },
+            "gradlePluginVersion": "8.4.0",
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34
+          }
         }
       ]
     ],

@@ -1,4 +1,4 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+/*import { Image, StyleSheet, Platform } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -71,4 +71,38 @@ const styles = StyleSheet.create({
     left: 0,
     position: 'absolute',
   },
+}); */
+// app/index.tsx
+import React from 'react';
+import { StyleSheet, View, Text, SafeAreaView, ScrollView } from 'react-native';
+import MoodEntry from '@/components/MoodEntry';
+
+export default function HomeScreen() {
+  return (
+    <SafeAreaView style={styles.safeArea}>
+      <ScrollView contentContainerStyle={styles.container}>
+        <Text style={styles.title}>Ruh Hali Kaydı</Text>
+        <MoodEntry />
+      </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  safeArea: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+  container: {
+    flexGrow: 1,
+    padding: 20,
+    justifyContent: 'flex-start',
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center',
+  },
 });
+
