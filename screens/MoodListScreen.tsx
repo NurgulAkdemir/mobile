@@ -52,7 +52,7 @@ const MoodListScreen = () => {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
           <View style={styles.moodItem}>
-            <Text style={styles.moodText}>Ruh Hali: {item.mood}</Text>
+            <Text style={styles.moodText}>Bugün Nasılım 🤔: {item.mood}</Text>
           </View>
         )}
       />
@@ -78,6 +78,6 @@ const styles = StyleSheet.create({
   },
   moodText: {
     fontSize: 18,
-  },
+  },	
 });
 
