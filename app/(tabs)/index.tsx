@@ -73,16 +73,33 @@ const styles = StyleSheet.create({
   },
 }); */
 // app/index.tsx
+import { useRouter } from 'expo-router';
+import { Button } from 'react-native';
+
 import React from 'react';
 import { StyleSheet, View, Text, SafeAreaView, ScrollView } from 'react-native';
 import MoodEntry from '@/components/MoodEntry';
 
 export default function HomeScreen() {
+  const router = useRouter(); // Router'ı burada çağırıyoruz
+
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.container}>
         <Text style={styles.title}>Ruh Hali Kaydı</Text>
+        
+        {/* Ruh hali giriş formu */}
         <MoodEntry />
+
+        {/* Araya boşluk vermek için View */}
+        <View style={styles.buttonContainer}>
+          {/* Kayıtları Görüntüle Butonu */}
+          <Button
+            title="Ruh Hali Kayıtlarını Görüntüle"
+            onPress={() => router.push('/mood-list')}
+          />
+        </View>
+
       </ScrollView>
     </SafeAreaView>
   );
@@ -104,5 +121,9 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: 'center',
   },
+  buttonContainer: {
+    marginTop: 30,
+  },
 });
+
 
